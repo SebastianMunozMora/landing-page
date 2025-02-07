@@ -35,7 +35,7 @@ startPrometheus() {
 
 prometheusData() {
     # Create persistent volume for your data
-    docker volume create prometheus-data
+    sudo docker volume create prometheus-data
     # Start Prometheus container
     docker run \
         -p 9090:9090 \
